@@ -1,0 +1,29 @@
+.our-features-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .card {
+    border: none;
+    transition: transform .2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      height: 100%;
+    }
+  }
+  

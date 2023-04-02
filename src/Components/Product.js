@@ -1,38 +1,55 @@
-import React from 'react'
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
-const Card = () => (
-  
-  <div className="card mt-5 px-4 mx-3 " style={{ width: '18rem' }}>
-    <img src="https://media.istockphoto.com/id/1295900106/photo/data-scientists-male-programmer-using-laptop-analyzing-and-developing-in-various-information.jpg?s=612x612&w=0&k=20&c=2z9VEOlF7mAgeZDEsnetqFMyQS6xqjmXDoryrQ_LeOc=" className="card-img-top" alt="..." />
-    <div className="card-body ">
-      <h5 className="card-title">CRM Service</h5>
-      <p className="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
-      <a href="/#" className="btn btn-primary">
-        Know More
-      </a>
-    </div>
-  </div>
-);
-
-const Product = () => {
-  const Product = [];
-  for (let i = 0; i < 18; i++) {
-    Product.push(<Card key={i} />);
-  }
-  
+function Product({ data }) {
   return (
-    <>
-    <div className="about-section text-center">
-  <p className="section-header"><h1 class="display-4">Sangtech Product</h1><span className="default-color"></span></p>
-  </div>
-    <div className="container">
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">{Product}</div>
+    <div className="text-center">
+      <h1>Our Products</h1>
+      <p>We not only provide solutions, we also help to build your business.</p>
+      <Row xs={1} md={3} className="g-4">
+        {data && data.length > 0 ? (
+          data.map((item, idx) => (
+            <Col key={idx}>
+              <Card>
+                <Card.Img variant="top" src={item.image} />
+                <Card.Body className="d-flex flex-column justify-content-between">
+                  <div>
+                    <Card.Title>{item.title}</Card.Title>
+                    <Card.Text>
+                      {item.description}
+                    </Card.Text>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <a href={item.link} className="btn btn-primary">Know More</a>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))
+        ) : (
+          Array.from({ length: 18 }).map((_, idx) => (
+            <Col key={idx}>
+              <Card>
+                <Card.Img variant="top" src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" />
+                <Card.Body className="d-flex flex-column justify-content-between">
+                  <div>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    </Card.Text>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <a href="/#" className="btn btn-primary">Know More</a>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))
+        )}
+      </Row>
     </div>
-    </>
   );
-};
+}
 
 export default Product;

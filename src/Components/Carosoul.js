@@ -1,32 +1,40 @@
-import React from 'react'
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
 
-function Carosoul() {
+
+function CarouselBanner() {
   return (
-<div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="10000">
-      <img src="http://sangtechtechnologies.in/images/santech-banner-simple.png" className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item" data-bs-interval="2000">
-      <img src="http://sangtechtechnologies.in/images/hospital-banner-simple.png" className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item">
-      <img src="http://sangtechtechnologies.in/images/food-banner-simple.png" className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item">
-      <img src="http://sangtechtechnologies.in/images/diagnostic-simple.png" className="d-block w-100" alt="..."/>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-  )
+    <Carousel>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="http://sangtechtechnologies.in/images/santech-banner-simple.png"
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="http://sangtechtechnologies.in/images/santech-banner-simple.png"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="http://sangtechtechnologies.in/images/santech-banner-simple.png"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="http://sangtechtechnologies.in/images/santech-banner-simple.png"
+          alt="Fourth slide"
+        />
+      </Carousel.Item>
+    </Carousel>
+  );
 }
 
-export default Carosoul
+export default CarouselBanner;
