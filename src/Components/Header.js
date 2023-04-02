@@ -1,13 +1,13 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from './logo.png';
+import logo from './Images/logo.png';
 
 function Header() {
   return (
     <Navbar bg="primary" variant="dark" expand="lg" className="justify-content-between sticky-top">
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} alt="Sangtech Technologies" className="d-inline-block align-top logo" />
+          <img src={logo} alt="Sangtech Technologies" className="d-inline-block align-top logo" style={{ maxHeight: '50px' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

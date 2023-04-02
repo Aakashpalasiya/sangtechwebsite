@@ -1,5 +1,10 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import santechBanner from './Images/santech-banner-simple.png';
+import hospitalBanner from './Images/hospital-banner-simple.png';
+import foodBanner from './Images/food-banner-simple.png';
+import diagnosticBanner from './Images/diagnostic-simple.png';
+
 
 
 function CarouselBanner() {
@@ -8,29 +13,29 @@ function CarouselBanner() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="http://sangtechtechnologies.in/images/santech-banner-simple.png"
-          alt="First slide"
+          src={santechBanner}
+          alt="SangTech_banner"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="http://sangtechtechnologies.in/images/santech-banner-simple.png"
-          alt="Second slide"
+          src={hospitalBanner}
+          alt="Hospital_banner"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="http://sangtechtechnologies.in/images/santech-banner-simple.png"
-          alt="Third slide"
+          src={foodBanner}
+          alt="Food_banner"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="http://sangtechtechnologies.in/images/santech-banner-simple.png"
-          alt="Fourth slide"
+          src={diagnosticBanner}
+          alt="Diagonostic_banner"
         />
       </Carousel.Item>
     </Carousel>

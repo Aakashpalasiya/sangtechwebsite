@@ -28,7 +28,7 @@ function OurFeatures() {
         </div>
         <div className="col">
           <div className="card h-100">
-            <img src="https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.jpg?b=1&s=170667a&w=0&k=20&c=F4ePFhK7r539j0_I2l1Zi01SX5ESqTvu_NtqjjOUoNQ=" className="card-img-top" alt="..." />
+          <img src="https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.jpg?b=1&s=170667a&w=0&k=20&c=F4ePFhK7r539j0_I2l1Zi01SX5ESqTvu_NtqjjOUoNQ=" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Product Analysis</h5>
               <p className="card-text">We offer a comprehensive product analysis service to help our clients identify opportunities for improvement in their technology solutions. Our team of experts will provide an in-depth analysis of your software and applications, helping you identify areas for optimization and enhancement.</p>
