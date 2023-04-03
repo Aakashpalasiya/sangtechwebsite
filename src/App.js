@@ -1,20 +1,26 @@
-import About from './Components/About';
-import Carosoul from './Components/Carosoul';
-import ContactUs from './Components/ContactUs';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
-import OurFeatures from './Components/OurFeatures';
-import Product from './Components/Product';
+import React from 'react';
+// import ContactUsPage from './ContactUsPage';
+// import Services from './Services';
+// import OurPortfolio from './OurPortfolio';
+// import OurProductPage from './OurProductPage';
+// import Career from './Career';
+// import Client from './Client';
+// import BlogPage from './BlogPage'
+import HomePage from './HomePage';
+// import AboutUspage from './AboutUspage';
 function App() {
   return (
     <div>
-    <Header/>
-    <Carosoul/>
-    <About/>
-    <Product/>
-    <OurFeatures/>
-    <ContactUs/>
-    <Footer/>
+    <HomePage/>
+    {/* <AboutUspage/> */}
+
+    {/* <Services/>  */}
+    {/* <OurPortfolio/> */}
+    {/* <OurProductPage/> */}
+    {/* <Career/> */}
+    {/* <Client/> */}
+    {/* <BlogPage/> */}
+    {/* <ContactUsPage/ */}
     </div>
   );
 }

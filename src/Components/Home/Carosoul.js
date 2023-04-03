@@ -1,9 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import santechBanner from './Images/santech-banner-simple.png';
-import hospitalBanner from './Images/hospital-banner-simple.png';
-import foodBanner from './Images/food-banner-simple.png';
-import diagnosticBanner from './Images/diagnostic-simple.png';
+import santechBanner from '../Images/santech-banner-simple.png';
+import hospitalBanner from '../Images/hospital-banner-simple.png';
+import foodBanner from '../Images/food-banner-simple.png';
+import diagnosticBanner from '../Images/diagnostic-simple.png';
 
 
 
