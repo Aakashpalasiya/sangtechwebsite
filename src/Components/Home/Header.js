@@ -13,7 +13,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link href="#" className="text-nowrap">Home</Nav.Link>
+          <Nav.Link href="#" className="text-nowrap">Home</Nav.Link>
             <Nav.Link href="#" className="text-nowrap">About Us</Nav.Link>
             <Nav.Link href="#" className="text-nowrap">Services</Nav.Link>
             <Nav.Link href="#" className="text-nowrap">Portfolio</Nav.Link>
