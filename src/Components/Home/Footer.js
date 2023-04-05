@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaEnvelope, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="text-uppercase mb-3">Company</h5>
             <ul className="list-unstyled">
-              <li><a href="/#">About Us</a></li>
+              <li><Link to="about" href="/#">About Us</Link></li>
               <li><a href="/#">We Are Hiring</a></li>
               <li><a href="/#">Meet The Team</a></li>
               <li><a href="/#">Copyright</a></li>
